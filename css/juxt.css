@@ -36,15 +36,20 @@ ody {
 
 /* My mods */
 
-/*
 .jumbotron {
   background: black;
   color: #eeeeee;
-  padding: 30px 0;
+  padding: 30px 20px;
   margin: 0;
 }
-*/
 
+.jumbotron h1 {
+  text-shadow: 0 0 0.1em #fff;
+}
+
+.container-narrow > hr {
+  margin: 10px 0;
+}
 
 /* Article style */
 
@@ -85,3 +90,52 @@ em {
   font-weight: bold;
 }
 */
+
+blockquote:before
+{
+  content: "“";
+}
+
+blockquote:after {
+  content: "”";
+}
+
+q:before
+{
+  content: "‘";
+}
+
+q:after
+{
+  content: "’";
+}
+
+article pre {
+    background: black;
+    color: #0f0;
+    margin-left: 0px;
+    padding: 2px 10px;
+}
+
+kbd {
+    font-weight: bold;
+}
+
+pre samp kbd:after {
+    content: "█";
+/*    content: "▂"; */
+    font-weight: normal;
+    color: #080;
+}
+
+pre samp.local:before {
+    content: "local$ ";
+}
+
+pre samp.prodroot:before {
+    content: "prod# ";
+}
+
+pre samp.prodacct:before {
+    content: "cljweb$ ";
+}
