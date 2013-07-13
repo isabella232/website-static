@@ -57,8 +57,9 @@ article header h1 {
   font-size: 28px;
 }
 
-article section {
-  border-top: 1px solid #EEEEEE;
+article section ~section {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
 }
 
 article section h1 {
@@ -143,4 +144,13 @@ pre samp.prodacct:before {
 p.next-section {
     text-align: right;
     padding-top: 20px;
+}
+
+article aside {
+    background: #eee;
+}
+
+article aside p {
+    padding: 4px 10px;
+    margin: 10px 0;
 }
