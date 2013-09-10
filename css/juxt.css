@@ -84,6 +84,11 @@ figcaption {
   text-align: center;
 }
 
+code {
+  color: black;
+  font-size: 110%;
+}
+
 /* To workaround https://code.google.com/p/chromium/issues/detail?id=169446 on my S3 phone */
 /*
 em {
@@ -91,16 +96,6 @@ em {
   font-weight: bold;
 }
 */
-
-blockquote:before
-{
-  content: "“";
-}
-
-blockquote:after {
-  content: "”";
-}
-
 q:before
 {
   content: "‘";
@@ -109,6 +104,19 @@ q:before
 q:after
 {
   content: "’";
+}
+
+blockquote q:before
+{
+  content: "“";
+}
+
+blockquote q:after {
+  content: "”";
+}
+
+cite:before {
+    content: " – ";
 }
 
 article pre {
@@ -129,6 +137,27 @@ pre samp kbd:after {
     color: #080;
 }
 
+p.next-section {
+    text-align: right;
+    padding-top: 20px;
+}
+
+article aside {
+    border: 1px solid #999;
+    background: #eee;
+    padding: 0 6px;
+    margin: 10px 0 10px 0;
+}
+
+article aside p, article aside pre {
+    padding: 4px 10px;
+    margin: 10px 0;
+}
+
+/* The below should belong in individual articles */
+
+/* manual clojure deployment */
+
 pre samp.local:before {
     content: "local$ ";
 }
@@ -141,16 +170,12 @@ pre samp.prodacct:before {
     content: "juxt$ ";
 }
 
-p.next-section {
-    text-align: right;
-    padding-top: 20px;
+/* webservices */
+
+pre samp.console:before {
+    content: "$ ";
 }
 
-article aside {
-    background: #eee;
-}
-
-article aside p {
-    padding: 4px 10px;
-    margin: 10px 0;
+figure pre {
+    text-align: left;
 }
