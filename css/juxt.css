@@ -179,3 +179,14 @@ pre samp.console:before {
 figure pre {
     text-align: left;
 }
+
+.endorsement {
+/*    border: 1px solid grey; */
+    padding: 20px;
+    margin: 20px;
+}
+
+.endorsement p {
+    margin-left: 60px;
+    text-align: right;
+}
